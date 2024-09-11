@@ -1,0 +1,57 @@
+@keyframes sliderAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes sliderIntroAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-slider {
+  opacity: 0;
+  position: relative;
+  background-color: var(--bg-inverse);
+  padding: 20px;
+  width: 100vw;
+  display: flex;
+  transition: background-color 0.5s ease;
+  animation: 2.5s sliderIntroAnimation ease forwards;
+}
+
+.hero-slider:hover .slider-list {
+  animation-play-state: paused;
+}
+
+.slider-list {
+  padding-left: 2vw;
+  display: flex;
+  gap: 2vw;
+  text-decoration: none;
+  animation: 20s sliderAnimation infinite linear;
+}
+
+.slider-item {
+  display: flex;
+  border-radius: 15px;
+  background-color: rgb(255, 237, 216);
+  height: 150px;
+  min-width: 150px;
+  transition: 0.5s ease;
+}
+
+.slider-item:hover {
+  background-color: white;
+  transform: scale(1.075);
+}
+
+.slider-item svg {
+  margin: auto;
+  height: 85%;
+  width: 85%;
+}

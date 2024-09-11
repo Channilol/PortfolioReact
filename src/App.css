@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&display=swap");
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --bg: rgb(255, 237, 216);
+  --bg-inverse: rgb(35, 35, 35);
+  /* FONT */
+  --open-sans: "Open Sans", system-ui;
+  --major-mono: "Major Mono Display", system-ui;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: var(--major-mono);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-color: var(--bg);
+  font-family: var(--font);
+  transition: background-color 0.5s ease;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }

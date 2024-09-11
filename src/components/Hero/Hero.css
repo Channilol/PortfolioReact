@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-title {
+  font-size: 12rem;
+  color: var(--bg-inverse);
+  transition: color 0.5s ease;
+  text-align: center;
+}
+
+@keyframes heroTitleAnimation {
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+
+.name span,
+.surname span {
+  opacity: 0;
+}
+
+.name {
+  translate: 0px -150px;
+  margin-bottom: 20px;
+}
+
+.surname {
+  letter-spacing: 1vw;
+  translate: 0px 150px;
+}
+
+.name,
+.surname {
+  opacity: 0;
+  animation: heroTitleAnimation 1s ease forwards;
+}
