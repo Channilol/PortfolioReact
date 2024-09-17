@@ -1,0 +1,26 @@
+.contacts-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 250px;
+  height: 150px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--bg);
+  background-color: var(--bg-inverse);
+  border: 2px solid var(--bg);
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.contacts-item i {
+  font-size: 4rem;
+}
+
+.contacts-item:hover {
+  color: var(--bg-inverse);
+  background-color: var(--bg);
+}

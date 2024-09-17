@@ -1,8 +1,9 @@
 import "./App.css";
-import Hero from "./components/Hero/Hero";
+import Homepage from "./components/Homepage/Homepage";
 import ThemeSwitcher from "./components/ThemeSwitcher/ThemeSwitcher";
 import ToTop from "./components/ToTop/ToTop";
 import Footer from "./components/Footer/Footer";
+import CustomCursor from "./components/CustomCursor/CustomCursor";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { applyTheme } from "./components/ThemeSwitcher/ThemeSwitcher";
@@ -29,9 +30,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <ThemeSwitcher />
+        <CustomCursor />
         {pagePosition > 0 && <ToTop />}
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Homepage />} />
         </Routes>
         <Footer />
       </div>

@@ -10,7 +10,7 @@ function scrollToTop() {
 const ToTop = () => {
   return (
     <div className="toTop">
-      <i class="bi bi-chevron-double-up" onClick={scrollToTop}></i>
+      <i className="bi bi-chevron-double-up" onClick={scrollToTop}></i>
     </div>
   );
 };

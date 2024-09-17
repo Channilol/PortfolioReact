@@ -2,15 +2,15 @@ import { useState } from "react";
 import "./ThemeSwitcher.css";
 
 export function applyTheme(theme) {
+  const cursor = document.querySelector(".custom-cursor");
   if (theme === "dark") {
     document.documentElement.style.setProperty("--bg", "rgb(255,237,216)");
     document.documentElement.style.setProperty("--bg-inverse", "rgb(35,35,35)");
+    cursor.style.backgroundColor = "var(--bg)";
   } else if (theme === "light") {
     document.documentElement.style.setProperty("--bg", "rgb(35,35,35)");
-    document.documentElement.style.setProperty(
-      "--bg-inverse",
-      "rgb(255,237,216)"
-    );
+    document.documentElement.style.setProperty("--bg-inverse", "rgb(255,237,216)");
+    cursor.style.backgroundColor = "var(--bg-inverse)";
   }
 }
 
@@ -33,9 +33,7 @@ const ThemeSwitcher = () => {
       className="theme-switcher"
       onClick={() => {
         switchTheme();
-        setThemeIcon(
-          themeIcon === "bi bi-sun-fill" ? "bi-moon-fill" : "bi bi-sun-fill"
-        );
+        setThemeIcon(themeIcon === "bi bi-sun-fill" ? "bi-moon-fill" : "bi bi-sun-fill");
       }}
     >
       <i className={themeIcon}></i>

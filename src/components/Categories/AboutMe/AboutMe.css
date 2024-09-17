@@ -1,0 +1,20 @@
+.about-me-btn {
+  cursor: pointer;
+  width: 350px;
+  margin-top: 25px;
+  padding: 15px 0;
+  border-radius: 25px;
+  color: var(--bg);
+  background-color: var(--bg-inverse);
+  border: 2px solid var(--bg);
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+  align-self: end;
+  transition: 0.5s ease;
+}
+
+.about-me-btn:hover {
+  color: var(--bg-inverse);
+  background-color: var(--bg);
+}

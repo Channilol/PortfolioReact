@@ -15,22 +15,9 @@ import { ReactComponent as ReactIcon } from "../../assets/svg_logos/react.svg";
 import { ReactComponent as Redux } from "../../assets/svg_logos/redux.svg";
 
 const Slider = () => {
-  const svgList = [
-    Git,
-    Mysql,
-    Mongodb,
-    Html,
-    Css,
-    Javascript,
-    ReactIcon,
-    Redux,
-    Nodejs,
-    Dart,
-    Flutter,
-    Csharp,
-    Net,
-    Java,
-  ];
+  // prettier-ignore
+  const svgList = [ Git, Mysql, Mongodb, Html, Css, Javascript, ReactIcon, Redux, Nodejs, Dart, Flutter, Csharp, Net, Java ];
+
   return (
     <div className="hero-slider">
       <ul className="slider-list slider-scroller">
