@@ -11,20 +11,25 @@
   cursor: pointer;
   position: fixed;
   bottom: 10px;
-  right: 20px;
+  right: 15px;
   z-index: 10;
   color: var(--bg-inverse);
+  background-color: var(--bg);
+  border: 2px solid var(--bg-inverse);
+  padding: 20px;
+  border-radius: 50%;
   font-size: 30px;
   width: 35px;
   height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: font-size 0.2s ease;
+  transition: font-size 0.2s ease, padding 0.2s ease;
   animation: toTopAnim 1.5s ease-in-out infinite alternate;
 }
 
 .toTop:hover {
-  font-size: 40px;
+  font-size: 35px;
+  padding: 25px;
   animation-play-state: paused;
 }

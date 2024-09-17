@@ -1,10 +1,9 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./CategoryItem.css";
 
 const CategoryItem = ({ title, hidden }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [hiddenDivClass, setHiddenDivClass] = useState("category-hidden-div");
-  //   const categoryItemRef = useRef(null);
 
   const toggleIsExpanded = () => {
     setIsExpanded(!isExpanded);
@@ -12,16 +11,6 @@ const CategoryItem = ({ title, hidden }) => {
       setHiddenDivClass("category-hidden-div");
     } else {
       setHiddenDivClass("category-hidden-div expanded");
-      //   if (categoryItemRef.current) {
-      //     categoryItemRef.current.scrollIntoView({ behavior: "smooth" });
-      //   }
-
-      //   setTimeout(() => {
-      //     window.scrollBy({
-      //       top: 500,
-      //       behavior: "smooth",
-      //     });
-      //   }, 250);
     }
   };
 
